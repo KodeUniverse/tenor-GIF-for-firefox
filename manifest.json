@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Reaction GIFs for Firefox",
+    "version": "1.0",
+  
+    "description": "A handy browser extension that allows you to find reaction images in GIF and singe-image formats.",
+    "homepage_url": "https://github.com/KodeUniverse/tenor-GIF-for-firefox",
+  
+    "icons": {
+      "48": "icons/satania-icon-48.png",
+      "96": "icons/satania-icon-96.png"
+    },
+
+    "permissions": ["activeTab"],
+    
+    "browser_action": {
+        "default_icon": "icons/satania-icon-32.png",
+        "default_title": "Image Picker",
+        "default_popup": "popup/window.html"
+    },
+    
+    "content_scripts": [
+      {
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["borderify.js"]
+      }
+    ]
+  }
+  
