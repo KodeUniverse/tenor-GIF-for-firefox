@@ -1,0 +1,14 @@
+
+#search-header input{
+    font-size: 24px;
+    margin: 15px;
+}
+.image-grid {
+    /* box-sizing: border-box; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.image-grid img{
+    width: 120px;
+    height: 120px;
+}
